@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>theming_domain</id>
+    <version>29.0.0</version>
+    <name>Domain Theming</name>
+    <summary>Customizes the appearance of Nextcloud according to the trusted domain from which it is being accessed.</summary>
+    <description lang="en"><![CDATA[Customizes the appearance of Nextcloud according to the trusted domain from which it is being accessed.]]></description>
+    <licence>agpl</licence>
+    <author mail="mepstein@live.cl" homepage="https://github.com/mediabox-cl">Michael Epstein</author>
+    <namespace>ThemingDomain</namespace>
+    <category>customization</category>
+    <documentation>
+        <admin>https://github.com/mediabox-cl/nextcloud-theming-domain</admin>
+    </documentation>
+    <bugs>https://github.com/mediabox-cl/nextcloud-theming-domain</bugs>
+    <website>https://github.com/mediabox-cl</website>
+    <repository type="git">https://github.com/mediabox-cl/nextcloud-theming-domain</repository>
+    <dependencies>
+        <php min-version="8.0" max-version="8.3" />
+        <nextcloud min-version="29" max-version="30"/>
+    </dependencies>
+</info>
