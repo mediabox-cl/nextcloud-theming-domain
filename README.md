@@ -1,6 +1,30 @@
 # Nextcloud - Domain Theming
 Customizes the appearance of Nextcloud according to the trusted domain from which it is being accessed.
 
+_Note: This application is intended for use by a system administrator as it has no user interface._
+
+## Installation
+
+### Automatic installation (recommended)
+
+~~Just install it from your Nextcloud application catalogue.~~ Not available (yet)
+
+### Manual installation
+
+Clone this repository into your **Nextcloud** apps directory:
+
+```bash
+cd /var/www/nextcloud/site/apps/
+git clone https://github.com/mediabox-cl/nextcloud-theming-domain theming_domain
+```
+Install it as usual from admin app list or CLI with:
+
+```bash
+cd ..
+sudo -u www-data php occ app:install theming_domain
+sudo -u www-data php occ app:enable theming_domain
+```
+
 # Configuration
 
 After the APP installation a new configuration file named `theming.config.php` is created inside the `config` directory. You can use this file to customize the trusted domains (`trusted_domains`) set in the Nextcloud `config.php` file.
@@ -12,7 +36,7 @@ After the APP installation a new configuration file named `theming.config.php` i
 
 _Note: None of these keys are mandatory, you can use them or not._
 
-## Configuration example:
+### Configuration example:
 
 ```
 <?php
@@ -35,3 +59,7 @@ $CONFIG = array(
     )
 );
 ```
+
+## Thanks to:
+
+- The Nextcloud community and developers.
